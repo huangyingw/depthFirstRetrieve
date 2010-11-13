@@ -7,8 +7,8 @@ typedef enum{FALSE,TRUE}Boolean;//FALSE为0，TRUE为1
 Boolean visited[MaxVertexNum]; //访问标志向量是全局量
 
 typedef struct node
-{	
-  int adjvex; 
+{
+  int adjvex;
   struct node *next;
   //若要表示边上的权，则应增加一个数据域
 }EdgeNode;
@@ -17,7 +17,7 @@ typedef struct node
 typedef struct vnode
 {
   //顶点域
-  VertexType vertex; 
+  VertexType vertex;
   //边表头指针
   EdgeNode *firstedge;
 }VertexNode;
@@ -25,16 +25,16 @@ typedef struct vnode
 //AdjList是邻接表类型
 typedef VertexNode AdjList[MaxVertexNum];
 
-//对于简单的应用，无须定义此类型，可直接使用AdjList类型。 
+//对于简单的应用，无须定义此类型，可直接使用AdjList类型。
 typedef struct ALGraph
 {
   //邻接表
   AdjList adjlist;
   //图中当前顶点数
   int n;
-  //图中当前边数 
+  //图中当前边数
   int e;
-}Graphic; 
+}Graphic;
 
 
 //此方法是把新结点插在头结点的后面
