@@ -79,6 +79,7 @@ void DFSTraverse(ALGraph *G)
       }
     }
   }
+  cout<<endl;
 }
 
 int main()
